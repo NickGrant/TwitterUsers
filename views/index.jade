@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    div.container
+        div.jumbotron
+            h1= title
+            p Select CSV file of Twitter usernames to upload
+            form#main(enctype="multipart/form-data", method="post")
+                div.form-group
+                    label(for="users") Select file
+                    input(type="file" id="users" name="users")
+                button.btn.btn-primary(type="submit") Upload
+
+
